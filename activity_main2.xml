@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <Button
+        android:id="@+id/btnFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/feed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/clean"
+        app:layout_constraintStart_toEndOf="@+id/btnFeed"
+        app:layout_constraintTop_toBottomOf="@+id/dog"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txtHunger"
+        android:layout_width="131dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/hunger"
+        app:layout_constraintBottom_toTopOf="@+id/txtCleanliness"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCleanliness"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/cleanliness"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="127dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/happiness"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_hungry_value"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="84dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hunger"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClean"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/txt_clean_value"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/clean"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hungry_value"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txt_happy"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/happiness"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_clean_value"
+        app:layout_constraintVertical_bias="0.08"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="377dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cdog1"
+        android:contentDescription="@string/todo2" />
+
+    <Button
+        android:id="@+id/btnHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toEndOf="@+id/btnClean"
+        app:layout_constraintTop_toBottomOf="@+id/dog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
